@@ -3,7 +3,7 @@ import { Agent } from '@mastra/core/agent';
 import { Step, Workflow } from '@mastra/core/workflows';
 import { z } from 'zod';
 
-const llm = openai('gpt-4o');
+const llm = openai(process.env.MODEL ?? "gpt-4o");
 
 const agent = new Agent({
   name: 'Weather Agent',
