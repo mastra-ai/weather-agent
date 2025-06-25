@@ -9,4 +9,4 @@ The Weather Agent template showcases how to:
 - Create an AI-powered agent using Mastra framework
 - Implement weather-related workflows
 - Handle user queries about weather conditions
-- Integrate with OpenAI's API for natural language processing
+- Integrate with Groq's API for natural language processing
