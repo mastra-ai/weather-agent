@@ -9,7 +9,7 @@ The Weather Agent template showcases how to:
 - Create an AI-powered agent using Mastra framework
 - Implement weather-related workflows
 - Handle user queries about weather conditions
-- Integrate with OpenAI's API for natural language processing
+- Integrate with Groq's API for natural language processing
 
 ## Setup
 
@@ -19,4 +19,4 @@ The Weather Agent template showcases how to:
 
 ## Environment Variables
 
-- `OPENAI_API_KEY`: Your OpenAI API key. [https://platform.openai.com/api-keys](https://platform.openai.com/api-keys)
+- `GROQ_API_KEY`: Your Groq API key. [https://console.groq.com/keys](https://console.groq.com/keys)
