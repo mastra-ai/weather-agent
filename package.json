@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "mastra dev"
+    "dev": "mastra dev",
+    "build": "mastra build"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +19,7 @@
     "@mastra/loggers": "latest",
     "@mastra/libsql": "latest",
     "@mastra/memory": "latest",
+    "difflib": "0.2.4",
     "zod": "^3.25.76"
   },
   "devDependencies": {
