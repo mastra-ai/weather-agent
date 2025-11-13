@@ -1,13 +1,10 @@
-import { anthropic } from '@ai-sdk/anthropic';
 import { Agent } from '@mastra/core/agent';
 import { createStep, createWorkflow } from '@mastra/core/workflows';
 import { z } from 'zod';
 
-const llm = anthropic(process.env.MODEL ?? "claude-3-5-sonnet-20240620");
-
 const agent = new Agent({
   name: 'Weather Agent',
-  model: llm,
+  model: 'anthropic/claude-3-5-sonnet-20240620',
   instructions: `
         You are a local activities and travel expert who excels at weather-based planning. Analyze the weather data and provide practical activity recommendations.
 

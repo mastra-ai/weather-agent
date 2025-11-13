@@ -1,4 +1,3 @@
-import { anthropic } from '@ai-sdk/anthropic';
 import { Agent } from '@mastra/core/agent';
 import { weatherTool } from '../tools';
 
@@ -16,6 +15,6 @@ export const weatherAgent = new Agent({
 
       Use the weatherTool to fetch current weather data.
 `,
-  model: anthropic(process.env.MODEL ?? "claude-3-5-sonnet-20240620"),
+  model: process.env.MODEL ?? 'anthropic/claude-3-5-sonnet-20240620',
   tools: { weatherTool },
 });
