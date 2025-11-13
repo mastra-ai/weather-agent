@@ -8,7 +8,7 @@ import { toolCallAppropriatenessScorer, completenessScorer, translationScorer } 
 export const mastra = new Mastra({
   workflows: { weatherWorkflow },
   agents: { weatherAgent },
-  storage: new LibSQLStore({ id: 'weather-agent-storage', url: ':memory:' }),
+  storage: new LibSQLStore({ url: ':memory:' }),
   scorers: {
     toolCallAppropriatenessScorer,
     completenessScorer,
@@ -23,4 +23,7 @@ export const mastra = new Mastra({
       enabled: true,
     },
   },
+  bundler: {
+    externals: ['difflib'],
+  }
 });
