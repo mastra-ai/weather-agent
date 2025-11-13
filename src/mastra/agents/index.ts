@@ -1,4 +1,3 @@
-import { groq } from '@ai-sdk/groq';
 import { Agent } from '@mastra/core/agent';
 import { weatherTool } from '../tools';
 
@@ -16,6 +15,6 @@ export const weatherAgent = new Agent({
 
       Use the weatherTool to fetch current weather data.
 `,
-  model: groq(process.env.MODEL ?? "llama-3.3-70b-versatile"),
+  model: process.env.MODEL ?? "groq/llama-3.3-70b-versatile",
   tools: { weatherTool },
 });

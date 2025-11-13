@@ -1,9 +1,8 @@
-import { groq } from '@ai-sdk/groq';
 import { Agent } from '@mastra/core/agent';
 import { createStep, createWorkflow } from '@mastra/core/workflows';
 import { z } from 'zod';
 
-const llm = groq(process.env.MODEL ?? "llama-3.3-70b-versatile");
+const llm = process.env.MODEL ?? "groq/llama-3.3-70b-versatile";
 
 const agent = new Agent({
   name: 'Weather Agent',
