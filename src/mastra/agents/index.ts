@@ -1,4 +1,3 @@
-import { google } from '@ai-sdk/google';
 import { Agent } from '@mastra/core/agent';
 import { weatherTool } from '../tools';
 
@@ -16,6 +15,6 @@ export const weatherAgent = new Agent({
 
       Use the weatherTool to fetch current weather data.
 `,
-  model: google(process.env.MODEL ?? "gemini-2.5-pro"),
+  model: process.env.MODEL ?? "google/gemini-2.5-pro",
   tools: { weatherTool },
 });

@@ -14,9 +14,12 @@
   "type": "module",
   "dependencies": {
     "@mastra/core": "latest",
+    "@mastra/evals": "latest",
     "@mastra/loggers": "latest",
-    "zod": "^3.25.76",
-    "@ai-sdk/google": "^2.0.23"
+    "@mastra/libsql": "latest",
+    "@mastra/memory": "latest",
+    "difflib": "0.2.4",
+    "zod": "^3.25.76"
   },
   "devDependencies": {
     "@types/node": "^22.15.29",
