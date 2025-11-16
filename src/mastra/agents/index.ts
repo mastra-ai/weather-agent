@@ -4,8 +4,13 @@ import { scorers } from '../scorers';
 import { LibSQLStore } from '@mastra/libsql';
 import { Memory } from '@mastra/memory';
 
-// Initialize memory with LibSQLStore for persistence using default storage
-const memory = new Memory();
+// Initialize memory with LibSQLStore for persistence
+const memory = new Memory({
+  storage: new LibSQLStore({
+    id: 'weather-agent-memory-storage',
+    url: 'file:../mastra.db', // Or your database URL
+  }),
+});
 
 export const weatherAgent = new Agent({
   id: 'weather-agent',

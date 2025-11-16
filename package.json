@@ -5,8 +5,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "mastra dev",
-    "build": "mastra build"
+    "dev": "mastra dev"
   },
   "keywords": [],
   "author": "",
@@ -14,17 +13,17 @@
   "description": "One Agent, one Workflow, one Tool, and some Scorers to bring you the weather in your city.",
   "type": "module",
   "dependencies": {
-    "@mastra/core": "latest",
-    "@mastra/evals": "latest",
-    "@mastra/loggers": "latest",
-    "@mastra/libsql": "latest",
-    "@mastra/memory": "latest",
-    "difflib": "0.2.4",
+    "@mastra/core": "beta",
+    "@mastra/evals": "beta",
+    "@mastra/loggers": "beta",
+    "@mastra/libsql": "beta",
+    "@mastra/memory": "beta",
+    "@mastra/observability": "beta",
     "zod": "^3.25.76"
   },
   "devDependencies": {
     "@types/node": "^22.15.29",
-    "mastra": "latest",
+    "mastra": "beta",
     "typescript": "^5.8.3"
   }
 }
