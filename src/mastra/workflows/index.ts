@@ -4,7 +4,7 @@ import { z } from 'zod';
 
 const agent = new Agent({
   name: 'Weather Agent',
-  model: process.env.MODEL || 'openai/gpt-4o',
+  model: process.env.MODEL ?? "google/gemini-2.5-pro",
   instructions: `
         You are a local activities and travel expert who excels at weather-based planning. Analyze the weather data and provide practical activity recommendations.
 
