@@ -4,7 +4,7 @@ import { z } from 'zod';
 
 const agent = new Agent({
   name: 'Weather Agent',
-  model: process.env.MODEL || 'openai/gpt-4o',
+  model: process.env.MODEL ?? "anthropic/claude-3-5-sonnet-20240620",
   instructions: `
         You are a local activities and travel expert who excels at weather-based planning. Analyze the weather data and provide practical activity recommendations.
 
