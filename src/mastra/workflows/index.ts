@@ -3,6 +3,7 @@ import { createStep, createWorkflow } from '@mastra/core/workflows';
 import { z } from 'zod';
 
 const agent = new Agent({
+  id: 'weather-agent',
   name: 'Weather Agent',
   model: process.env.MODEL || 'openai/gpt-4o',
   instructions: `
